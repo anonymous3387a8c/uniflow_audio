@@ -444,26 +444,375 @@
     <hr>
 
     <!-- Placeholder Sections -->
+    <!-- TTM Section -->
     <section id="ttm">
       <h3 class="title is-4">🎼 Text-to-Music (TTM)</h3>
-      <p>Coming soon...</p>
+
+      <style>
+        details.caption-dropdown > summary {
+          list-style: none;
+          cursor: pointer;
+          outline: none;
+          user-select: none;
+          color: #1f2937; /* 深灰 */
+          font-weight: 500;
+        }
+        details.caption-dropdown > summary::-webkit-details-marker { display: none; }
+        details.caption-dropdown > summary::before {
+          content: "▼ ";
+          font-size: 0.8em;
+          display: inline-block;
+          transition: transform 0.2s ease;
+          margin-right: 4px;
+        }
+        details.caption-dropdown[open] > summary::before {
+          transform: rotate(180deg);
+        }
+
+        details.caption-dropdown[open] .caption-preview {
+          display: none;
+        }
+
+        .caption-preview {
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          white-space: normal;
+        }
+        .caption-full {
+          margin-top: 0.5rem;
+          color: #374151;
+          line-height: 1.5;
+        }
+        .audio-cell audio {
+          width: 280px;
+          max-width: 100%;
+        }
+      </style>
+
+      <div class="table-container">
+        <table class="table is-striped is-fullwidth is-hoverable">
+          <thead>
+            <tr>
+              <th style="width: 60%;">Caption (click to expand)</th>
+              <th>Generated Audio</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Row 1 -->
+            <tr>
+              <td>
+                <details class="caption-dropdown">
+                  <summary>
+                    <span class="caption-preview">
+                      The song is an instrumental. The song is medium tempo played by a solo guitarist……
+                    </span>
+                  </summary>
+                  <div class="caption-full">
+                    The song is an instrumental. The song is medium tempo played by a solo guitarist on a vintage super tone with an exquisite tone. The song is emotional and passionate. The song has poor audio quality.
+                  </div>
+                </details>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static\check\ttm\-lPXTBXa0tE_The_song_is_an_instrumental._The_song_is_medium_tempo_played_by_a_solo_guitarist_on_a_vi.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+              <td>
+                <details class="caption-dropdown">
+                  <summary>
+                    <span class="caption-preview">The low quality recording features a Christmas song that consists of a widely spread, groovy piano melody...</span>
+                  </summary>
+                  <div class="caption-full">
+                    <!-- CAPTION_2_FULL -->
+                    The low quality recording features a Christmas song that consists of a widely spread, groovy piano melody, followed by synth choir keys. It sounds happy, joyful, fun and euphoric - as any Christmas song should sound.
+                  </div>
+                </details>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <!-- PATH_2 -->
+                  <source src="static\check\ttm\0lIETNZ_7sg_The_low_quality_recording_features_a_Christmas_song_that_consists_of_a_widely_spread,_gr.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+              <td>
+                <details class="caption-dropdown">
+                  <summary>
+                    <span class="caption-preview">This audio contains complex and fast acoustic drums with a lot of cymbal hits along with a tambourine shaker... </span>
+                  </summary>
+                  <div class="caption-full">
+                    <!-- CAPTION_3_FULL -->
+                    This audio contains complex and fast acoustic drums with a lot of cymbal hits along with a tambourine shaker. E-guitars and e-bass are playing along to the drums. This piece is in a 7/4 time signature. This song may be playing at a live rock concert.
+                  </div>
+                </details>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <!-- PATH_3 -->
+                  <source src="static\check\ttm\Ck-1kRnHqro_This_audio_contains_complex_and_fast_acoustic_drums_with_a_lot_of_cymbal_hits_along_with.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr>
+              <td>
+                <details class="caption-dropdown">
+                  <summary>
+                    <span class="caption-preview">This is a Hindu music piece. There is a female vocalist singing at a medium-to-high pitch in a devotional manner...</span>
+                  </summary>
+                  <div class="caption-full">
+                    <!-- CAPTION_4_FULL -->
+                    This is a Hindu music piece. There is a female vocalist singing at a medium-to-high pitch in a devotional manner. A sitar provides a melodic background. The tabla is being played in the rhythmic background. 
+                    The atmosphere is spiritual. This piece could be played at religious events and online content related to Hindu religion.
+                  </div>
+                </details>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <!-- PATH_4 -->
+                  <source src="static\check\ttm\cS2gRhH6it4_This_is_a_Hindu_music_piece._There_is_a_female_vocalist_singing_at_a_medium-to-high_pitc.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+
+            <!-- Row 5 -->
+            <tr>
+              <td>
+                <details class="caption-dropdown">
+                  <summary>
+                    <span class="caption-preview">The low quality recording features a mellow arpeggiated piano melody...</span>
+                  </summary>
+                  <div class="caption-full">
+                    <!-- CAPTION_5_FULL -->
+                    The low quality recording features a mellow arpeggiated piano melody over which there is a theremin solo melody playing. 
+                    It sounds sad, emotional and passionate. The recording is noisy.
+                  </div>
+                </details>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <!-- PATH_5 -->
+                  <source src="static\check\ttm\bBfi3iEu9fk_The_low_quality_recording_features_a_mellow_arpeggiated_piano_melody_over_which_there_is.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
     </section>
+    <hr>
+
+    <!-- Placeholder Sections -->
 
     <section id="sr">
       <h3 class="title is-4">🔊 Super-Resolution (SR)</h3>
       <p>Coming soon...</p>
     </section>
+    <hr>
 
+    <!-- Placeholder Sections -->
     <section id="se">
       <h3 class="title is-4">🎤 Speech Enhancement (SE)</h3>
-      <p>Coming soon...</p>
+    
+      <style>
+        #se .audio-cell audio {
+          width: 280px;
+          max-width: 100%;
+        }
+      </style>
+    
+      <div class="table-container">
+        <table class="table is-striped is-fullwidth is-hoverable">
+          <thead>
+            <tr>
+              <th style="width: 50%;">Noisy</th>
+              <th style="width: 50%;">Enhanced</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/noisy/p232_100.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/p232_100.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+    
+            <!-- Row 2 -->
+            <tr>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/noisy/p232_294.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/p232_294.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+    
+            <!-- Row 3 -->
+            <tr>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/noisy/p257_198.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/p257_198.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+    
+            <!-- Row 4 -->
+            <tr>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/noisy/p257_395.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/p257_395.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+    
+            <!-- Row 5 -->
+            <tr>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/noisy/p257_422.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls preload="none">
+                  <source src="static/check/se/p257_422.wav" type="audio/wav">
+                </audio>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
+    <hr>
 
-    <section id="vta">
-      <h3 class="title is-4">📹 Video-to-Audio (VTA)</h3>
-      <p>Coming soon...</p>
+    <!-- Placeholder Sections -->
+
+    <section id="vta" class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h3 class="title is-4">📹 Video-to-Audio (VTA)</h3>
+        <p class="is-size-7 has-text-grey">
+          The input videos are muted, while the versions shown here include audio generated by our model
+        </p>
+        <div class="table-container">
+          <table class="table is-striped is-fullwidth is-hoverable">
+            <thead>
+              <tr>
+                <th style="width: 50%;">Input Video (Muted)</th>
+                <th style="width: 50%;">Video with Generated Audio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr>
+                <td>
+                  <video controls muted preload="metadata" width="320">
+                    <source src="static/check/vta/_1vudgh5RpE_59_airplane_flyby.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/vta/_1vudgh5RpE_59_airplane_flyby.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+    
+              <!-- Row 2 -->
+              <tr>
+                <td>
+                  <video controls muted preload="metadata" width="320">
+                    <source src="static/check/vta/_2hETAEaX3c_106_ice_cracking.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/vta/_2hETAEaX3c_106_ice_cracking.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+    
+              <!-- Row 3 -->
+              <tr>
+                <td>
+                  <video controls muted preload="metadata" width="320">
+                    <source src="static/check/vta/_NW6RuwbP1Q_20_people_giggling.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/vta/_NW6RuwbP1Q_20_people_giggling.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+    
+              <!-- Row 4 -->
+              <tr>
+                <td>
+                  <video controls muted preload="metadata" width="320">
+                    <source src="static\check\vta\_TnfNR8lXxI_360_playing_badminton.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static\check\vta\_TnfNR8lXxI_360_playing_badminton.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+    
+              <!-- Row 5 -->
+              <tr>
+                <td>
+                  <video controls muted preload="metadata" width="320">
+                    <source src="static\check\vta\-oGJwGEsIiA_90_splashing_water.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static\check\vta\-oGJwGEsIiA_90_splashing_water.mp4" type="video/mp4">
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+      </div>
     </section>
+    
+    <hr>
 
+    <!-- Placeholder Sections -->
     <section id="svs">
       <h3 class="title is-4">🎙 Singing Voice Synthesis (SVS)</h3>
       <div class="table-container">
@@ -500,10 +849,10 @@
               </td>
             </tr>
             <tr>
-              <td>我问春天你从哪里来</td>
+              <td>我想了很久 我开始慌了</td>
               <td>
                 <audio controls>
-                  <source src="static\check\svs\Soprano-1_问春0000_我问春天你从哪里来.wav" type="audio/wav">
+                  <source src="static\check\svs\Tenor-1_童话_0002_我想了很久我开始慌了.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -519,6 +868,113 @@
         </table>
       </div>
     </section>
+
+    <hr>
+
+    <!-- Placeholder Sections -->
+
+    <section id="tts" class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h3 class="title is-4">🗣️ Text-to-Speech (TTS)</h3>
+    
+        <style>
+          #tts .audio-cell audio { width: 280px; max-width: 100%; }
+          #tts .caption-cell { color: #6b7280; font-style: italic; }
+        </style>
+    
+        <div class="table-container">
+          <table class="table is-striped is-fullwidth is-hoverable">
+            <thead>
+              <tr>
+                <th style="width: 40%;">Caption</th>
+                <th style="width: 30%;">Reference (Timbre)</th>
+                <th style="width: 30%;">Generated (Ours)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="caption-cell">Other circumstances permitting, that instinct disposes men to look with favor upon productive efficiency and on whatever is of human use.</td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static/check/tts/ref/3570_5696_000011_000007.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static\check\tts\3570_5696_000004_000001.wav" type="audio/wav">
+                  </audio>
+                </td>
+              </tr>
+              <!-- Row 1 -->
+              <tr>
+                <td class="caption-cell">Marie looked up at his defiant figure and her face clouded.</td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static/check/tts/ref/0237_134500_000035_000001.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static\check\tts\0237_134500_000032_000000.wav" type="audio/wav">
+                  </audio>
+                </td>
+              </tr>
+    
+              <!-- Row 2 -->
+              <tr>
+                <td class="caption-cell">I entered, and I took you into my confidence as to the suggestions of the side table.</td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static/check/tts/ref/1580_141084_000077_000004.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static\check\tts\1580_141084_000078_000000.wav" type="audio/wav">
+                  </audio>
+                </td>
+              </tr>
+    
+              <!-- Row 3 -->
+              <tr>
+                <td class="caption-cell">Then Mary Taylor, whose conscience was uncomfortable, said:</td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static/check/tts/ref/1995_1836_000004_000010.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static\check\tts\1995_1836_000022_000000.wav" type="audio/wav">
+                  </audio>
+                </td>
+              </tr>
+    
+              <!-- Row 4 -->
+              <tr>
+                <td class="caption-cell">Soon after the station went into operation this ingenious plan was changed, and the third dynamo was replaced by two others.</td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static/check/tts/ref/2300_131720_000030_000005.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls preload="none">
+                    <source src="static\check\tts\2300_131720_000033_000003.wav" type="audio/wav">
+                  </audio>
+                </td>
+              </tr>
+    
+              <!-- Row 5 -->
+              
+            </tbody>
+          </table>
+        </div>
+    
+        
+      </div>
+    </section>
+    
     
 
   </div>
