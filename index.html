@@ -495,7 +495,7 @@
         <table class="table is-striped is-fullwidth is-hoverable">
           <thead>
             <tr>
-              <th style="width: 60%;">Caption (click to expand)</th>
+              <th style="width: 60%;">Instruction (click to expand)</th>
               <th>Generated Audio</th>
             </tr>
           </thead>
@@ -616,11 +616,127 @@
 
     <!-- Placeholder Sections -->
 
-    <section id="sr">
-      <h3 class="title is-4">🔊 Super-Resolution (SR)</h3>
-      <p>Coming soon...</p>
+    <section id="sr" class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h3 class="title is-4">🔊 Super-Resolution (SR)</h3>
+    
+        <style>
+          #sr .pair-row { margin-bottom: 1.25rem; }
+          #sr .col { padding: 0.75rem; border: 1px solid #eee; border-radius: 10px; background: #fff; }
+          #sr .audio-wrap { display: flex; align-items: center; gap: 12px; }
+          #sr .audio-wrap audio { width: 320px; max-width: 100%; }
+          #sr .spec-box { width: 120px; height: 72px; border: 1px dashed #cbd5e1; border-radius: 6px;
+                          display: flex; align-items: center; justify-content: center; font-size: 12px; color: #64748b; }
+          #sr .spec-img { width: 120px; height: 72px; object-fit: cover; border-radius: 6px; border: 1px solid #e5e7eb; }
+          @media (max-width: 768px) { #sr .audio-wrap { flex-direction: column; align-items: flex-start; } }
+        </style>
+    
+        <!-- Pair 1 -->
+        <div class="columns is-variable is-4 pair-row">
+          <div class="column col">
+            <p class="has-text-weight-semibold mb-2">Low Sampling Rate</p>
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static\check\sr\low\esc_4ce12fbcd8_f55bcbc9.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static\check\sr\low\esc_4ce12fbcd8_f55bcbc9.png">
+            </div>
+          </div>
+          <div class="column col">
+            <p class="has-text-weight-semibold mb-2">High Sampling Rate</p>
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static\check\sr\esc_4ce12fbcd8_f55bcbc9.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static\check\sr\esc_4ce12fbcd8_f55bcbc9.png">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Pair 2 -->
+        <div class="columns is-variable is-4 pair-row">
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static/check/sr/low/esc_4dd6b827ee_345f4ad9.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static\check\sr\low\esc_4dd6b827ee_345f4ad9.png">
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static/check/sr/esc_4dd6b827ee_345f4ad9.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static\check\sr\esc_4dd6b827ee_345f4ad9.png">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Pair 3 -->
+        <div class="columns is-variable is-4 pair-row">
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static/check/sr/low/musdb1.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/low/musdb1.png">
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static\check\sr\musdb_b47c23ebbe_4055d89a.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/musdb1.png"> 
+            </div>
+          </div>
+        </div>
+    
+        <!-- Pair 4 -->
+        <div class="columns is-variable is-4 pair-row">
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static/check/sr/low/musdb2.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/low/musdb2.png">
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static\check\sr\musdb_50294df16b_027c0495.wav" type="audio/wav">
+              </audio>
+               <img class="spec-img" src="static/check/sr/musdb2.png">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Pair 5 -->
+        <div class="columns is-variable is-4 pair-row">
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static/check/sr/low/p361_002.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/low/vctk.png">
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls preload="none">
+                <source src="static/check/sr/vctk_a651f7b3f0_cee9b834.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/vctk_a651f7b3f0_cee9b834.png">
+            </div>
+          </div>
+        </div>
+    
+        
+      </div>
     </section>
-    <hr>
+    
 
     <!-- Placeholder Sections -->
     <section id="se">
@@ -886,9 +1002,9 @@
           <table class="table is-striped is-fullwidth is-hoverable">
             <thead>
               <tr>
-                <th style="width: 40%;">Caption</th>
+                <th style="width: 40%;">Content</th>
                 <th style="width: 30%;">Reference (Timbre)</th>
-                <th style="width: 30%;">Generated (Ours)</th>
+                <th style="width: 30%;">Generated Audio</th>
               </tr>
             </thead>
             <tbody>
