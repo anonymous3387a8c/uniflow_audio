@@ -343,8 +343,9 @@
         <table class="table is-striped is-fullwidth is-hoverable">
           <thead>
             <tr>
-              <th style="width: 50%;">Prompt</th>
-              <th>Generated Audio</th>
+              <th>Prompt</th>
+              <th>UniFlow-Audio</th>
+              <th>AudioX</th>
             </tr>
           </thead>
           <tbody>
@@ -352,7 +353,12 @@
               <td>"pigeons coo and rustle."</td>
               <td>
                 <audio controls>
-                  <source src="static/check/tta/_BSmz3SEW1w_Pigeons_coo_and_rustle.wav" type="audio/wav">
+                  <source src="static/check/t2a/uniflow_audio/_BSmz3SEW1w_Pigeons_coo_and_rustle.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/t2a/audiox/Y_BSmz3SEW1w.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -360,7 +366,12 @@
               <td>"A man talking followed by a toilet flushing."</td>
               <td>
                 <audio controls>
-                  <source src="static/check/tta/_z6pymOet7g_A_man_talking_followed_by_a_toilet_flushing.wav" type="audio/wav">
+                  <source src="static/check/t2a/uniflow_audio/_z6pymOet7g_A_man_talking_followed_by_a_toilet_flushing.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/t2a/audiox/Y_z6pymOet7g.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -368,7 +379,12 @@
               <td>"An adult male speaks, and a crowd laughs and then cheers and applauds."</td>
               <td>
                 <audio controls>
-                  <source src="static/check/tta/K2kIOBeCfuo_An_adult_male_speaks,_and_a_crowd_laughs_and_then_cheers_and_applauds.wav" type="audio/wav">
+                  <source src="static/check/t2a/uniflow_audio/K2kIOBeCfuo_An_adult_male_speaks,_and_a_crowd_laughs_and_then_cheers_and_applauds.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/t2a/audiox/YK2kIOBeCfuo.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -376,7 +392,12 @@
               <td>"Music in the background as a women speaks and food fries."</td>
               <td>
                 <audio controls>
-                  <source src="static/check/tta/Q87LBiwJjTE_Music_in_the_background_as_a_woman_speaks_and_food_fries.wav" type="audio/wav">
+                  <source src="static/check/t2a/uniflow_audio/Q87LBiwJjTE_Music_in_the_background_as_a_woman_speaks_and_food_fries.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/t2a/audiox/YQ87LBiwJjTE.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -384,7 +405,12 @@
               <td>"A train is passing by and sound its whistle."</td>
               <td>
                 <audio controls>
-                  <source src="static\check\tta\JHhEjsAkZoc_A_train_is_passing_by_and_sound_its_whistle..wav" type="audio/wav">
+                  <source src="static/check/t2a/uniflow_audio/JHhEjsAkZoc_A_train_is_passing_by_and_sound_its_whistle..wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/t2a/audiox/YJHhEjsAkZoc.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -407,7 +433,7 @@
           cursor: pointer;
           outline: none;
           user-select: none;
-          color: #1f2937; /* 深灰 */
+          color: #1f2937;
           font-weight: 500;
         }
         details.caption-dropdown > summary::-webkit-details-marker { display: none; }
@@ -448,8 +474,9 @@
         <table class="table is-striped is-fullwidth is-hoverable">
           <thead>
             <tr>
-              <th style="width: 60%;">Instruction (click to expand)</th>
-              <th>Generated Audio</th>
+              <th style="width: 33%;">Instruction (click to expand)</th>
+              <th>UniFlow-Audio</th>
+              <th>AudioX</th>
             </tr>
           </thead>
           <tbody>
@@ -469,8 +496,13 @@
                 </details>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
-                  <source src="static\check\ttm\-lPXTBXa0tE_The_song_is_an_instrumental._The_song_is_medium_tempo_played_by_a_solo_guitarist_on_a_vi.wav" type="audio/wav">
+                <audio controls>
+                  <source src="static/check/t2m/uniflow_audio/-lPXTBXa0tE_The_song_is_an_instrumental._The_song_is_medium_tempo_played_by_a_solo_guitarist_on_a_vi.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <source src="static/check/t2m/audiox/-lPXTBXa0tE.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -489,9 +521,15 @@
                 </details>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <!-- PATH_2 -->
-                  <source src="static\check\ttm\0lIETNZ_7sg_The_low_quality_recording_features_a_Christmas_song_that_consists_of_a_widely_spread,_gr.wav" type="audio/wav">
+                  <source src="static/check/t2m/uniflow_audio/0lIETNZ_7sg_The_low_quality_recording_features_a_Christmas_song_that_consists_of_a_widely_spread,_gr.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <!-- PATH_2 -->
+                  <source src="static/check/t2m/audiox/0lIETNZ_7sg.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -510,9 +548,15 @@
                 </details>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <!-- PATH_3 -->
-                  <source src="static\check\ttm\Ck-1kRnHqro_This_audio_contains_complex_and_fast_acoustic_drums_with_a_lot_of_cymbal_hits_along_with.wav" type="audio/wav">
+                  <source src="static/check/t2m/uniflow_audio/Ck-1kRnHqro_This_audio_contains_complex_and_fast_acoustic_drums_with_a_lot_of_cymbal_hits_along_with.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <!-- PATH_2 -->
+                  <source src="static/check/t2m/audiox/Ck-1kRnHqro.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -532,9 +576,15 @@
                 </details>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <!-- PATH_4 -->
-                  <source src="static\check\ttm\cS2gRhH6it4_This_is_a_Hindu_music_piece._There_is_a_female_vocalist_singing_at_a_medium-to-high_pitc.wav" type="audio/wav">
+                  <source src="static/check/t2m/uniflow_audio/cS2gRhH6it4_This_is_a_Hindu_music_piece._There_is_a_female_vocalist_singing_at_a_medium-to-high_pitc.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <!-- PATH_2 -->
+                  <source src="static/check/t2m/audiox/cS2gRhH6it4.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -554,9 +604,15 @@
                 </details>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <!-- PATH_5 -->
-                  <source src="static\check\ttm\bBfi3iEu9fk_The_low_quality_recording_features_a_mellow_arpeggiated_piano_melody_over_which_there_is.wav" type="audio/wav">
+                  <source src="static/check/t2m/uniflow_audio/bBfi3iEu9fk_The_low_quality_recording_features_a_mellow_arpeggiated_piano_melody_over_which_there_is.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <!-- PATH_5 -->
+                  <source src="static/check/t2m/audiox/bBfi3iEu9fk.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -575,6 +631,11 @@
     
         <style>
           #sr .pair-row { margin-bottom: 1.25rem; }
+          #sr .pair-header {margin-bottom: 0.5rem;}
+          #sr .pair-header .col {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+          }
           #sr .col { padding: 0.75rem; border: 1px solid #eee; border-radius: 10px; background: #fff; }
           #sr .audio-wrap { display: flex; align-items: center; gap: 12px; }
           #sr .audio-wrap audio { width: 320px; max-width: 100%; }
@@ -583,25 +644,46 @@
           #sr .spec-img { width: 120px; height: 72px; object-fit: cover; border-radius: 6px; border: 1px solid #e5e7eb; }
           @media (max-width: 768px) { #sr .audio-wrap { flex-direction: column; align-items: flex-start; } }
         </style>
-    
+
+        <div class="columns is-variable is-4 pair-row pair-header">
+          <div class="column col has-text-weight-semibold">
+            Low Sampling Rate Audio
+          </div>
+          <div class="column col has-text-weight-semibold">
+            UniFlow-Audio
+          </div>
+          <div class="column col has-text-weight-semibold">
+            Audio SR
+          </div>
+        </div>
+
         <!-- Pair 1 -->
         <div class="columns is-variable is-4 pair-row">
           <div class="column col">
-            <p class="has-text-weight-semibold mb-2">Low Sampling Rate</p>
+            <!-- <p class="has-text-weight-semibold mb-2">Low Sampling Rate Audio</p> -->
             <div class="audio-wrap">
-              <audio controls preload="none">
-                <source src="static\check\sr\low\esc_4ce12fbcd8_f55bcbc9.wav" type="audio/wav">
+              <audio controls>
+                <source src="static/check/sr/low/esc_4ce12fbcd8_f55bcbc9.wav" type="audio/wav">
               </audio>
-              <img class="spec-img" src="static\check\sr\low\esc_4ce12fbcd8_f55bcbc9.png">
+              <img class="spec-img" src="static/check/sr/low/esc_4ce12fbcd8_f55bcbc9.png">
             </div>
           </div>
           <div class="column col">
-            <p class="has-text-weight-semibold mb-2">High Sampling Rate</p>
+            <!-- <p class="has-text-weight-semibold mb-2">UniFlow-Audio</p> -->
             <div class="audio-wrap">
-              <audio controls preload="none">
-                <source src="static\check\sr\esc_4ce12fbcd8_f55bcbc9.wav" type="audio/wav">
+              <audio controls>
+                <source src="static/check/sr/uniflow_audio/esc_4ce12fbcd8_f55bcbc9.wav" type="audio/wav">
               </audio>
-              <img class="spec-img" src="static\check\sr\esc_4ce12fbcd8_f55bcbc9.png">
+              <img class="spec-img" src="static/check/sr/uniflow_audio/esc_4ce12fbcd8_f55bcbc9.png">
+            </div>
+          </div>
+          <div class="column col">
+            <!-- <p class="has-text-weight-semibold mb-2">Audio SR</p> -->
+            <div class="audio-wrap">
+              <audio controls>
+                <source src="static/check/sr/audio_sr/esc_4ce12fbcd8_f55bcbc9.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/audio_sr/esc_4ce12fbcd8_f55bcbc9.png">
             </div>
           </div>
         </div>
@@ -610,18 +692,26 @@
         <div class="columns is-variable is-4 pair-row">
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
+              <audio controls>
                 <source src="static/check/sr/low/esc_4dd6b827ee_345f4ad9.wav" type="audio/wav">
               </audio>
-              <img class="spec-img" src="static\check\sr\low\esc_4dd6b827ee_345f4ad9.png">
+              <img class="spec-img" src="static/check/sr/low/esc_4dd6b827ee_345f4ad9.png">
             </div>
           </div>
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
-                <source src="static/check/sr/esc_4dd6b827ee_345f4ad9.wav" type="audio/wav">
+              <audio controls>
+                <source src="static/check/sr/uniflow_audio/esc_4dd6b827ee_345f4ad9.wav" type="audio/wav">
               </audio>
-              <img class="spec-img" src="static\check\sr\esc_4dd6b827ee_345f4ad9.png">
+              <img class="spec-img" src="static/check/sr/uniflow_audio/esc_4dd6b827ee_345f4ad9.png">
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls>
+                <source src="static/check/sr/audio_sr/esc_4dd6b827ee_345f4ad9.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/audio_sr/esc_4dd6b827ee_345f4ad9.png">
             </div>
           </div>
         </div>
@@ -630,7 +720,7 @@
         <div class="columns is-variable is-4 pair-row">
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
+              <audio controls>
                 <source src="static/check/sr/low/musdb1.wav" type="audio/wav">
               </audio>
               <img class="spec-img" src="static/check/sr/low/musdb1.png">
@@ -638,10 +728,18 @@
           </div>
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
-                <source src="static\check\sr\musdb_b47c23ebbe_4055d89a.wav" type="audio/wav">
+              <audio controls>
+                <source src="static/check/sr/uniflow_audio/musdb_b47c23ebbe_4055d89a.wav" type="audio/wav">
               </audio>
-              <img class="spec-img" src="static/check/sr/musdb1.png"> 
+              <img class="spec-img" src="static/check/sr/uniflow_audio/musdb1.png"> 
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls>
+                <source src="static/check/sr/audio_sr/musdb_b47c23ebbe_182f6b0b.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/audio_sr/musdb_b47c23ebbe_182f6b0b.png"> 
             </div>
           </div>
         </div>
@@ -650,7 +748,7 @@
         <div class="columns is-variable is-4 pair-row">
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
+              <audio controls>
                 <source src="static/check/sr/low/musdb2.wav" type="audio/wav">
               </audio>
               <img class="spec-img" src="static/check/sr/low/musdb2.png">
@@ -658,10 +756,18 @@
           </div>
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
-                <source src="static\check\sr\musdb_50294df16b_027c0495.wav" type="audio/wav">
+              <audio controls>
+                <source src="static/check/sr/uniflow_audio/musdb_50294df16b_027c0495.wav" type="audio/wav">
               </audio>
-               <img class="spec-img" src="static/check/sr/musdb2.png">
+               <img class="spec-img" src="static/check/sr/uniflow_audio/musdb2.png">
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls>
+                <source src="static/check/sr/audio_sr/musdb_50294df16b_a10f2011.wav" type="audio/wav">
+              </audio>
+               <img class="spec-img" src="static/check/sr/audio_sr/musdb_50294df16b_a10f2011.png">
             </div>
           </div>
         </div>
@@ -670,7 +776,7 @@
         <div class="columns is-variable is-4 pair-row">
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
+              <audio controls>
                 <source src="static/check/sr/low/p361_002.wav" type="audio/wav">
               </audio>
               <img class="spec-img" src="static/check/sr/low/vctk.png">
@@ -678,10 +784,18 @@
           </div>
           <div class="column col">
             <div class="audio-wrap">
-              <audio controls preload="none">
-                <source src="static/check/sr/vctk_a651f7b3f0_cee9b834.wav" type="audio/wav">
+              <audio controls>
+                <source src="static/check/sr/uniflow_audio/vctk_a651f7b3f0_cee9b834.wav" type="audio/wav">
               </audio>
-              <img class="spec-img" src="static/check/sr/vctk_a651f7b3f0_cee9b834.png">
+              <img class="spec-img" src="static/check/sr/uniflow_audio/vctk_a651f7b3f0_cee9b834.png">
+            </div>
+          </div>
+          <div class="column col">
+            <div class="audio-wrap">
+              <audio controls>
+                <source src="static/check/sr/audio_sr/p361_002.wav" type="audio/wav">
+              </audio>
+              <img class="spec-img" src="static/check/sr/audio_sr/p361_002.png">
             </div>
           </div>
         </div>
@@ -706,21 +820,27 @@
         <table class="table is-striped is-fullwidth is-hoverable">
           <thead>
             <tr>
-              <th style="width: 50%;">Noisy</th>
-              <th style="width: 50%;">Enhanced</th>
+              <th style="width: 33%;">Noisy</th>
+              <th style="width: 33%;">UniFlow-Audio</th>
+              <th style="width: 33%;">UniAudio</th>
             </tr>
           </thead>
           <tbody>
             <!-- Row 1 -->
             <tr>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <source src="static/check/se/noisy/p232_100.wav" type="audio/wav">
                 </audio>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
-                  <source src="static/check/se/p232_100.wav" type="audio/wav">
+                <audio controls>
+                  <source src="static/check/se/uniflow_audio/p232_100.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <source src="static/check/se/uniaudio/p232_100.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -728,13 +848,18 @@
             <!-- Row 2 -->
             <tr>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <source src="static/check/se/noisy/p232_294.wav" type="audio/wav">
                 </audio>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
-                  <source src="static/check/se/p232_294.wav" type="audio/wav">
+                <audio controls>
+                  <source src="static/check/se/uniflow_audio/p232_294.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <source src="static/check/se/uniaudio/p232_294.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -742,13 +867,18 @@
             <!-- Row 3 -->
             <tr>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <source src="static/check/se/noisy/p257_198.wav" type="audio/wav">
                 </audio>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
-                  <source src="static/check/se/p257_198.wav" type="audio/wav">
+                <audio controls>
+                  <source src="static/check/se/uniflow_audio/p257_198.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <source src="static/check/se/uniaudio/p257_198.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -756,13 +886,18 @@
             <!-- Row 4 -->
             <tr>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <source src="static/check/se/noisy/p257_395.wav" type="audio/wav">
                 </audio>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
-                  <source src="static/check/se/p257_395.wav" type="audio/wav">
+                <audio controls>
+                  <source src="static/check/se/uniflow_audio/p257_395.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <source src="static/check/se/uniaudio/p257_395.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -770,13 +905,18 @@
             <!-- Row 5 -->
             <tr>
               <td class="audio-cell">
-                <audio controls preload="none">
+                <audio controls>
                   <source src="static/check/se/noisy/p257_422.wav" type="audio/wav">
                 </audio>
               </td>
               <td class="audio-cell">
-                <audio controls preload="none">
-                  <source src="static/check/se/p257_422.wav" type="audio/wav">
+                <audio controls>
+                  <source src="static/check/se/uniflow_audio/p257_422.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td class="audio-cell">
+                <audio controls>
+                  <source src="static/check/se/uniaudio/p257_422.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -792,14 +932,15 @@
       <div class="container is-max-desktop">
         <h3 class="title is-4">📹 Video-to-Audio (V2A)</h3>
         <p class="is-size-7 has-text-grey">
-          The input videos are muted, while the versions shown here include audio generated by our model
+          The first column is the input silent video, while the others are generated foley
         </p>
         <div class="table-container">
           <table class="table is-striped is-fullwidth is-hoverable">
             <thead>
               <tr>
-                <th style="width: 50%;">Input Video (Muted)</th>
-                <th style="width: 50%;">Video with Generated Audio</th>
+                <th>Input Video (Muted)</th>
+                <th>UniFlow-Audio</th>
+                <th>AudioX</th>
               </tr>
             </thead>
             <tbody>
@@ -807,12 +948,17 @@
               <tr>
                 <td>
                   <video controls muted preload="metadata" width="320">
-                    <source src="static/check/vta/_1vudgh5RpE_59_airplane_flyby.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_1vudgh5RpE_59_airplane_flyby.mp4" type="video/mp4">
                   </video>
                 </td>
                 <td>
                   <video controls preload="metadata" width="320">
-                    <source src="static/check/vta/_1vudgh5RpE_59_airplane_flyby.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_1vudgh5RpE_59_airplane_flyby.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/v2a/audiox/_1vudgh5RpE_59.mp4" type="video/mp4">
                   </video>
                 </td>
               </tr>
@@ -821,12 +967,17 @@
               <tr>
                 <td>
                   <video controls muted preload="metadata" width="320">
-                    <source src="static/check/vta/_2hETAEaX3c_106_ice_cracking.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_2hETAEaX3c_106_ice_cracking.mp4" type="video/mp4">
                   </video>
                 </td>
                 <td>
                   <video controls preload="metadata" width="320">
-                    <source src="static/check/vta/_2hETAEaX3c_106_ice_cracking.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_2hETAEaX3c_106_ice_cracking.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/v2a/audiox/_2hETAEaX3c_106.mp4" type="video/mp4">
                   </video>
                 </td>
               </tr>
@@ -835,12 +986,17 @@
               <tr>
                 <td>
                   <video controls muted preload="metadata" width="320">
-                    <source src="static/check/vta/_NW6RuwbP1Q_20_people_giggling.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_NW6RuwbP1Q_20_people_giggling.mp4" type="video/mp4">
                   </video>
                 </td>
                 <td>
                   <video controls preload="metadata" width="320">
-                    <source src="static/check/vta/_NW6RuwbP1Q_20_people_giggling.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_NW6RuwbP1Q_20_people_giggling.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/v2a/audiox/_NW6RuwbP1Q_20.mp4" type="video/mp4">
                   </video>
                 </td>
               </tr>
@@ -849,12 +1005,17 @@
               <tr>
                 <td>
                   <video controls muted preload="metadata" width="320">
-                    <source src="static\check\vta\_TnfNR8lXxI_360_playing_badminton.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_TnfNR8lXxI_360_playing_badminton.mp4" type="video/mp4">
                   </video>
                 </td>
                 <td>
                   <video controls preload="metadata" width="320">
-                    <source src="static\check\vta\_TnfNR8lXxI_360_playing_badminton.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/_TnfNR8lXxI_360_playing_badminton.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/v2a/audiox/_TnfNR8lXxI_360.mp4" type="video/mp4">
                   </video>
                 </td>
               </tr>
@@ -863,12 +1024,17 @@
               <tr>
                 <td>
                   <video controls muted preload="metadata" width="320">
-                    <source src="static\check\vta\-oGJwGEsIiA_90_splashing_water.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/-oGJwGEsIiA_90_splashing_water.mp4" type="video/mp4">
                   </video>
                 </td>
                 <td>
                   <video controls preload="metadata" width="320">
-                    <source src="static\check\vta\-oGJwGEsIiA_90_splashing_water.mp4" type="video/mp4">
+                    <source src="static/check/v2a/uniflow_audio/-oGJwGEsIiA_90_splashing_water.mp4" type="video/mp4">
+                  </video>
+                </td>
+                <td>
+                  <video controls preload="metadata" width="320">
+                    <source src="static/check/v2a/audiox/-oGJwGEsIiA_90.mp4" type="video/mp4">
                   </video>
                 </td>
               </tr>
@@ -888,8 +1054,9 @@
         <table class="table is-striped is-fullwidth is-hoverable">
           <thead>
             <tr>
-              <th style="width: 60%;">Lyrics</th>
-              <th>Audio</th>
+              <th>Lyrics</th>
+              <th>UniFlow-Audio</th>
+              <th>DiffSinger</th>
             </tr>
           </thead>
           <tbody>
@@ -897,7 +1064,12 @@
               <td>看过黄昏追逐黎明 没看过你</td>
               <td>
                 <audio controls>
-                  <source src="static\check\svs\Alto-2_奇妙能力歌0002_看过黄昏追逐黎明没看过你.wav" type="audio/wav">
+                  <source src="static/check/svs/uniflow_audio/Alto-2_奇妙能力歌0002_看过黄昏追逐黎明没看过你.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/svs/diffsinger/Alto-2_奇妙能力歌0002_看过黄昏追逐黎明没看过你-m4singer_diff_e2e.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -905,7 +1077,12 @@
               <td>听过天空拒绝飞鸟</td>
               <td>
                 <audio controls>
-                  <source src="static\check\svs\Alto-2_奇妙能力歌0008_听过天空拒绝飞鸟.wav" type="audio/wav">
+                  <source src="static/check/svs/uniflow_audio/Alto-2_奇妙能力歌0008_听过天空拒绝飞鸟.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/svs/diffsinger/Alto-2_奇妙能力歌0008_听过天空拒绝飞鸟-m4singer_diff_e2e.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -913,7 +1090,12 @@
               <td>能够拥抱的就别拉扯 时间着急的</td>
               <td>
                 <audio controls>
-                  <source src="static\check\svs\Alto-2_岁月神偷0001_能够拥抱的就别拉扯时间着急的.wav" type="audio/wav">
+                  <source src="static/check/svs/uniflow_audio/Alto-2_岁月神偷0001_能够拥抱的就别拉扯时间着急的.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/svs/diffsinger/Alto-2_岁月神偷0001_能够拥抱的就别拉扯时间着急的-m4singer_diff_e2e.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -921,7 +1103,12 @@
               <td>我想了很久 我开始慌了</td>
               <td>
                 <audio controls>
-                  <source src="static\check\svs\Tenor-1_童话_0002_我想了很久我开始慌了.wav" type="audio/wav">
+                  <source src="static/check/svs/uniflow_audio/Tenor-1_童话_0002_我想了很久我开始慌了.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/svs/diffsinger/Tenor-1_童话0002_我想了很久我开始慌了-m4singer_diff_e2e.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -929,7 +1116,12 @@
               <td>一杯敬故乡 一杯敬远方</td>
               <td>
                 <audio controls>
-                  <source src="static\check\svs\Tenor-2_消愁_0011_一杯敬故乡一杯敬远方.wav" type="audio/wav">
+                  <source src="static/check/svs/uniflow_audio/Tenor-2_消愁_0011_一杯敬故乡一杯敬远方.wav" type="audio/wav">
+                </audio>
+              </td>
+              <td>
+                <audio controls>
+                  <source src="static/check/svs/diffsinger/Tenor-2_消愁0011_一杯敬故乡一杯敬远方-m4singer_diff_e2e.wav" type="audio/wav">
                 </audio>
               </td>
             </tr>
@@ -955,22 +1147,28 @@
           <table class="table is-striped is-fullwidth is-hoverable">
             <thead>
               <tr>
-                <th style="width: 40%;">Content</th>
-                <th style="width: 30%;">Reference (Timbre)</th>
-                <th style="width: 30%;">Generated Audio</th>
+                <th style="width: 25%;">Content</th>
+                <th style="width: 25%;">Voice Reference</th>
+                <th style="width: 25%;">UniFlow-Audio</th>
+                <th style="width: 25%;">UniAudio</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="caption-cell">Other circumstances permitting, that instinct disposes men to look with favor upon productive efficiency and on whatever is of human use.</td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
+                  <audio controls>
                     <source src="static/check/tts/ref/3570.wav" type="audio/wav">
                   </audio>
                 </td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
-                    <source src="static\check\tts\3570_5696_000004_000001.wav" type="audio/wav">
+                  <audio controls>
+                    <source src="static/check/tts/uniflow_audio/3570_5696_000004_000001.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls>
+                    <source src="static/check/tts/uniaudio/tts_3570_5696_000004_000001_sampling_sample0.wav" type="audio/wav">
                   </audio>
                 </td>
               </tr>
@@ -978,13 +1176,18 @@
               <tr>
                 <td class="caption-cell">Marie looked up at his defiant figure and her face clouded.</td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
+                  <audio controls>
                     <source src="static/check/tts/ref/237.wav" type="audio/wav">
                   </audio>
                 </td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
-                    <source src="static\check\tts\0237_134500_000032_000000.wav" type="audio/wav">
+                  <audio controls>
+                    <source src="static/check/tts/uniflow_audio/0237_134500_000032_000000.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls>
+                    <source src="static/check/tts/uniaudio/tts_237_134500_000032_000000_sampling_sample0.wav" type="audio/wav">
                   </audio>
                 </td>
               </tr>
@@ -993,13 +1196,18 @@
               <tr>
                 <td class="caption-cell">I entered, and I took you into my confidence as to the suggestions of the side table.</td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
+                  <audio controls>
                     <source src="static/check/tts/ref/1580.wav" type="audio/wav">
                   </audio>
                 </td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
-                    <source src="static\check\tts\1580_141084_000078_000000.wav" type="audio/wav">
+                  <audio controls>
+                    <source src="static/check/tts/uniflow_audio/1580_141084_000078_000000.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls>
+                    <source src="static/check/tts/uniaudio/tts_1580_141084_000078_000000_sampling_sample0.wav" type="audio/wav">
                   </audio>
                 </td>
               </tr>
@@ -1008,13 +1216,18 @@
               <tr>
                 <td class="caption-cell">Then Mary Taylor, whose conscience was uncomfortable, said:</td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
+                  <audio controls>
                     <source src="static/check/tts/ref/1995.wav" type="audio/wav">
                   </audio>
                 </td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
-                    <source src="static\check\tts\1995_1836_000022_000000.wav" type="audio/wav">
+                  <audio controls>
+                    <source src="static/check/tts/uniflow_audio/1995_1836_000022_000000.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls>
+                    <source src="static/check/tts/uniaudio/tts_1995_1836_000022_000000_sampling_sample0.wav" type="audio/wav">
                   </audio>
                 </td>
               </tr>
@@ -1023,13 +1236,18 @@
               <tr>
                 <td class="caption-cell">Soon after the station went into operation this ingenious plan was changed, and the third dynamo was replaced by two others.</td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
+                  <audio controls>
                     <source src="static/check/tts/ref/2300.wav" type="audio/wav">
                   </audio>
                 </td>
                 <td class="audio-cell">
-                  <audio controls preload="none">
-                    <source src="static\check\tts\2300_131720_000033_000003.wav" type="audio/wav">
+                  <audio controls>
+                    <source src="static/check/tts/uniflow_audio/2300_131720_000033_000003.wav" type="audio/wav">
+                  </audio>
+                </td>
+                <td class="audio-cell">
+                  <audio controls>
+                    <source src="static/check/tts/uniaudio/tts_2300_131720_000033_000003_sampling_sample0.wav" type="audio/wav">
                   </audio>
                 </td>
               </tr>
